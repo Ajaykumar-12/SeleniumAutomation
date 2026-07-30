@@ -17,8 +17,7 @@ public class Logouttest extends baseclass {
 	public void App_Logout() {
 		
 		Loginpage lp=new Loginpage(driver);
-		lp.Logindata("themeeride", "$@Meeride|@|2024^$");
-
+		lp.Login();
 		applogout=new Logoutpage(driver);
 		applogout.logoutbtn();
 		applogout.app_logout();

@@ -30,7 +30,5 @@ public class fetchExceldatademo {
 			}
 			System.out.println();
 		}
-
 	}
-
 }

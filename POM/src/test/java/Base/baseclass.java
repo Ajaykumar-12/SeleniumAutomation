@@ -2,6 +2,7 @@ package Base;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -14,12 +15,7 @@ public class baseclass {
 	@BeforeClass
 	public void setup() {
 		//this webdriver setup
-		//launch chrome driver.
-		//waits used
-		ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");          // run without UI
-        options.addArguments("--no-sandbox");        // required in CI
-        options.addArguments("--disable-dev-shm-usage"); // avoid memory issues
+		
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));

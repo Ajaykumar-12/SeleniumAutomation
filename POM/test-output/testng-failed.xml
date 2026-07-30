@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.Logintest">
+      <class name="Tests.Bookingstest">
         <methods>
-          <include name="tc1"/>
+          <include name="app_payment_option_selection"/>
+          <include name="todatepicker"/>
+          <include name="app_Bookings"/>
           <include name="teardown"/>
+          <include name="app_payment_option"/>
+          <include name="datepicer"/>
+          <include name="app_Booking_Option"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.Logintest -->
+      </class> <!-- Tests.Bookingstest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

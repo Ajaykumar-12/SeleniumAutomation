@@ -1,5 +1,7 @@
 package Tests;
 import java.io.FileInputStream;
+
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -14,13 +16,15 @@ import org.testng.annotations.Test;
 
 import Base.baseclass;
 import Pages.Loginpage;
+import Pages.Logoutpage;
 import Tests.Bookingstest;
 public class Logintest extends baseclass {
 	
 	@Test
 	public void tc1() throws IOException, InterruptedException {
 		
-		FileInputStream fio=new FileInputStream("C:\\Users\\hp\\Desktop\\Userinput.xlsx");
+		Loginpage lp;
+		/*FileInputStream fio=new FileInputStream("C:\\Users\\hp\\Desktop\\Userinput.xlsx");
 		
 		XSSFWorkbook workbook=new XSSFWorkbook(fio);
 		
@@ -47,6 +51,13 @@ public class Logintest extends baseclass {
 			
 		lpg.Logindata(list.get(li), list.get(li+1));
 		
-		}		
+		}*/	
+		
+		lp=new Loginpage(driver);
+		lp.Login();
+		
+		Logoutpage lo=new Logoutpage(driver);
+		lo.logoutbtn();
+		lo.app_logout();
 	}	
 	}
