@@ -17,8 +17,8 @@ import org.testng.annotations.Test;
 import Base.baseclass;
 import Pages.Loginpage;
 import Pages.Logoutpage;
-import Tests.Bookingstest;
-public class Logintest extends baseclass {
+import Tests.BookingsTest;
+public class LoginTest extends baseclass {
 	
 	@Test
 	public void tc1() throws IOException, InterruptedException {

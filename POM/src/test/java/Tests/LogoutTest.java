@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 
 import Base.baseclass;
 import Pages.Loginpage;
-import Tests.Bookingstest;
+import Tests.BookingsTest;
 import Pages.Logoutpage;
 import Pages.Bookingspage;
-public class Logouttest extends baseclass {
+public class LogoutTest extends baseclass {
 	
 	Logoutpage applogout;
 	Bookingspage bpg;

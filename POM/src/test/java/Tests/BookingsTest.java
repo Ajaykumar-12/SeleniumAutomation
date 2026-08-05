@@ -11,10 +11,10 @@ import Base.baseclass;
 import Pages.Bookingspage;
 import Pages.DriversPage;
 import Pages.Loginpage;
-import Tests.Logintest;
-public class Bookingstest extends baseclass {
+import Tests.LoginTest;
+public class BookingsTest extends baseclass {
 	public Bookingspage bpg;
-	public Logintest tst;
+	public LoginTest tst;
 	public DriversPage dp;
 	@Test(priority=1)
 	public void app_Login() {

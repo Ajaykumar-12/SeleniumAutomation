@@ -8,7 +8,7 @@ import Pages.DriversPage;
 import Pages.Loginpage;
 
 
-public class DriverModule_test extends baseclass {
+public class DriverModuleTest extends baseclass {
 	
 	Loginpage lp;
 	DriversPage dp;
