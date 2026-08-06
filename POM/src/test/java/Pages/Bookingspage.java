@@ -18,20 +18,23 @@ import Locators.DriverModule_Locators;
 
 public class Bookingspage{
 	WebDriver driver;
-	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait;
 	public Bookingspage(WebDriver driver) {
 		this.driver=driver;
+		
+		this.wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		
 		PageFactory.initElements(driver, this);
 	}
 	
 	public void bookingsearch() {
 		
-		WebElement btn=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.bookinglocator));
+		WebElement btn=driver.findElement(BookingsLocators.bookinglocator);
 		btn.click();
 	}
 	public void booking_status() {
 		
-		WebElement booking=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.bookingopt));
+		WebElement booking=driver.findElement(BookingsLocators.bookingopt);
 		booking.click();
 	}
 	public void booking_option() {
@@ -52,7 +55,7 @@ public class Bookingspage{
     public void from_date() {
 		
     	
-    	wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.fromdate)).click();
+    	driver.findElement(BookingsLocators.fromdate).click();
 		String expectedMonth = "August";
         String expectedYear = "2026";
         String expectedDate = "20";
@@ -80,12 +83,9 @@ public class Bookingspage{
     	
     	while(true) {
     		
-    		String current_month=driver.findElement(BookingsLocators.todatemonth).getText();
-    		System.out.println(current_month);
-    		String current_year=driver.findElement(BookingsLocators.todateyear).getText();
-    		System.out.println(current_year);
+    		String current_month=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.todatemonth)).getText();
+    		String current_year=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.todateyear)).getText();
     		if(current_month.equalsIgnoreCase(expected_month) && current_year.equalsIgnoreCase(expected_Year)) {
-    			System.out.println("Found");
     			break;
     		}
     		driver.findElement(BookingsLocators.todatenext).click();
