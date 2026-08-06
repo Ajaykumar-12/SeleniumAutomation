@@ -56,10 +56,11 @@ public class Bookingspage{
         String expectedDate = "20";
         
         while(true) {
-        	
-        	String currentMonth=driver.findElement(BookingsLocators.month).getText();
-        	String currentYear=driver.findElement(BookingsLocators.year).getText();
+        	WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+        	String currentMonth=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.month)).getText();
+        	String currentYear=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.year)).getText();
         	if(currentMonth.equalsIgnoreCase(expectedMonth) && currentYear.equalsIgnoreCase(expectedYear)) {
+        		System.out.println("Found");
         		
         		break;
         	}
