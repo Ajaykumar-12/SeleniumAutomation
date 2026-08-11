@@ -18,10 +18,13 @@ import Locators.DriverModule_Locators;
 public class DriversPage {
 	
 	WebDriver driver;
+	WebDriverWait wait;
 	
 	public DriversPage(WebDriver driver){
 		
 		this.driver=driver;
+		
+		wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		
 	}
 	
@@ -57,8 +60,9 @@ public class DriversPage {
 		for(int i=0;i<opt.size();i++) {
 			for(int j=0;j<opts.size();j++) {
 				if(opt.get(i).getText()!="-All-" && opts.get(j).getText()!="-All-") {
-					sel.selectByVisibleText(opt.get(i).getText());
+					sel.selectByVisibleText(opt.get(i+1).getText());
 					sel1.selectByVisibleText(opts.get(j).getText());
+					//wait.until(ExpectedConditions.elementToBeClickable(DriverModule_Locators.FilterResults)).click();
 				}		
 			}
 		 }

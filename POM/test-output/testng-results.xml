@@ -1,73 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-28T16:51:25 IST" name="Default suite" finished-at="2026-07-28T16:51:39 IST" duration-ms="13851">
+  <suite started-at="2026-08-11T13:13:33 IST" name="Default suite" finished-at="2026-08-11T13:14:20 IST" duration-ms="47336">
     <groups>
     </groups>
-    <test started-at="2026-07-28T16:51:25 IST" name="Default test" finished-at="2026-07-28T16:51:39 IST" duration-ms="13851">
-      <class name="Tests.Bookingstest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:25 IST" name="setup" finished-at="2026-07-28T16:51:33 IST" duration-ms="7738" status="PASS">
+    <test started-at="2026-08-11T13:13:33 IST" name="Default test" finished-at="2026-08-11T13:14:20 IST" duration-ms="47336">
+      <class name="Tests.ChangepwdTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.ChangepwdTest@34e9fd99]" started-at="2026-08-11T13:13:33 IST" name="setup" finished-at="2026-08-11T13:13:44 IST" duration-ms="11659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="app_Login()[pri:1, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:33 IST" name="app_Login" finished-at="2026-07-28T16:51:34 IST" duration-ms="1683" status="PASS">
+        <test-method signature="app_Login()[pri:1, instance:Tests.ChangepwdTest@34e9fd99]" started-at="2026-08-11T13:13:45 IST" name="app_Login" finished-at="2026-08-11T13:13:46 IST" duration-ms="1489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- app_Login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:34 IST" name="teardown" finished-at="2026-07-28T16:51:34 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.ChangepwdTest@34e9fd99]" started-at="2026-08-11T13:13:46 IST" name="teardown" finished-at="2026-08-11T13:13:46 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="app_Bookings()[pri:2, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:34 IST" name="app_Bookings" finished-at="2026-07-28T16:51:35 IST" duration-ms="815" status="PASS">
+        <test-method signature="screenimg()[pri:2, instance:Tests.ChangepwdTest@34e9fd99]" started-at="2026-08-11T13:13:46 IST" name="screenimg" finished-at="2026-08-11T13:14:20 IST" duration-ms="34014" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- app_Bookings -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:35 IST" name="teardown" finished-at="2026-07-28T16:51:35 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="app_Booking_Option()[pri:3, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:35 IST" name="app_Booking_Option" finished-at="2026-07-28T16:51:36 IST" duration-ms="367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- app_Booking_Option -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:36 IST" name="teardown" finished-at="2026-07-28T16:51:36 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- screenimg -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.ChangepwdTest@34e9fd99]" started-at="2026-08-11T13:14:20 IST" name="teardown" finished-at="2026-08-11T13:14:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="app_payment_option()[pri:4, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:36 IST" name="app_payment_option" finished-at="2026-07-28T16:51:36 IST" duration-ms="221" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- app_payment_option -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:36 IST" name="teardown" finished-at="2026-07-28T16:51:36 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="app_payment_option_selection()[pri:5, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:36 IST" name="app_payment_option_selection" finished-at="2026-07-28T16:51:36 IST" duration-ms="347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- app_payment_option_selection -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:36 IST" name="teardown" finished-at="2026-07-28T16:51:36 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="datepicer()[pri:6, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:36 IST" name="datepicer" finished-at="2026-07-28T16:51:37 IST" duration-ms="775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- datepicer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:37 IST" name="teardown" finished-at="2026-07-28T16:51:37 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="todatepicker()[pri:7, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:37 IST" name="todatepicker" finished-at="2026-07-28T16:51:39 IST" duration-ms="1696" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- todatepicker -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.Bookingstest@43bc63a3]" started-at="2026-07-28T16:51:39 IST" name="teardown" finished-at="2026-07-28T16:51:39 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Tests.Bookingstest -->
+      </class> <!-- Tests.ChangepwdTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
