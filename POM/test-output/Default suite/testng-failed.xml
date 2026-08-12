@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.ChangepwdTest">
+      <class name="Tests.NotificationTest">
         <methods>
-          <include name="app_Login"/>
-          <include name="screenimg"/>
+          <include name="promotionalerts"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Tests.ChangepwdTest -->
+      </class> <!-- Tests.NotificationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
