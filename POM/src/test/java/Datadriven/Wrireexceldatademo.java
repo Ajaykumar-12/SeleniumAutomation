@@ -17,9 +17,10 @@ public class Wrireexceldatademo {
 		String data[][]= {{"Akshay","3","Hyderabad"},{"Sulochana","51","Mumbai"},{"Phakeer","57","Hyderabad"}};
 
 		XSSFWorkbook workbook=new XSSFWorkbook();
-		XSSFSheet xs=workbook.createSheet("Exceldata");
+		XSSFSheet xs=workbook.createSheet("Studentdata");
 		XSSFRow xsrow=xs.createRow(0);
 		for(int i=0;i<headers.length;i++) {
+			
 			XSSFCell cell=xsrow.createCell(i);
 			cell.setCellValue(headers[i]);
 		}

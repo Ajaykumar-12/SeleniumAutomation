@@ -1,4 +1,3 @@
-
 package Datadriven;
 
 import java.io.FileInputStream;
@@ -9,27 +8,32 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class fetchExceldatademo {
+public class exceldatafetchdemo {
 
 	public static void main(String[] args) throws IOException {
 		
-		FileInputStream fis=new FileInputStream("C:\\Users\\hp\\Desktop\\Exceldata.xlsx");
+		FileInputStream fi=new FileInputStream("C:\\Users\\hp\\Desktop\\Exceldata.xlsx");
 		
-		XSSFWorkbook workbook=new XSSFWorkbook(fis);
+		XSSFWorkbook workbook=new XSSFWorkbook(fi);
+		
 		XSSFSheet sheet=workbook.getSheet("Exceldata");
+		
 		int totalrows=sheet.getLastRowNum();
 		int totalcols=sheet.getRow(0).getLastCellNum();
 		
-		System.out.println(totalrows);
-		System.out.println(totalcols);
-		
-		for(int row=0;row<=totalrows;row++) {
-			XSSFRow r=sheet.getRow(row);
-			for(int col=0;col<totalcols;col++) {
-				XSSFCell cel=r.getCell(col);
-				System.out.printf("%-15s",cel);
+		for(int i=0;i<=totalrows;i++) {
+			
+			XSSFRow r=sheet.getRow(i);
+			
+			for(int j=0;j<totalcols;j++) {
+				
+				XSSFCell cel=r.getCell(j);
+				System.out.printf("%-15s", cel);
 			}
+			
 			System.out.println();
 		}
+
 	}
+
 }
