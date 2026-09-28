@@ -49,6 +49,7 @@ public class LoginTest extends baseclass {
 		
 		lp=new Loginpage(driver);
 		lp.Login();
+		
 		Logoutpage lo=new Logoutpage(driver);
 		lo.logoutbtn();
 		lo.app_logout();
