@@ -1,5 +1,4 @@
 package Pages;
-
 import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -14,7 +13,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import Base.baseclass;
 import Locators.DriverModule_Locators;
-
 public class DriversPage {
 	WebDriver driver;
 	WebDriverWait wait;
