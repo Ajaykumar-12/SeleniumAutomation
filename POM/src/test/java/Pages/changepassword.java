@@ -12,20 +12,13 @@ import Locators.changepassword_Locators;
 import Utilities.Generalutility;
 
 public class changepassword {
-	
 	WebDriver driver;
 	WebDriverWait wait;
 	Generalutility gl;
-	
 	public changepassword(WebDriver driver) {
-		
 		this.driver=driver;
-		
 		wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-	
-	
-
 	public void updatepwd() throws IOException {
 		wait.until(ExpectedConditions.elementToBeClickable(changepassword_Locators.Accountsettings)).click();
 		//wait.until(ExpectedConditions.elementToBeClickable(changepassword_Locators.logout)).click();
@@ -41,5 +34,4 @@ public class changepassword {
 		driver.findElement(changepassword_Locators.Updateprofile_btn).click();
 		gl.screenshot("changepassword screeshot");
 	}
-
 }

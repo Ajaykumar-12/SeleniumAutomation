@@ -21,19 +21,14 @@ public class Bookingspage{
 	WebDriverWait wait;
 	public Bookingspage(WebDriver driver) {
 		this.driver=driver;
-		
 		this.wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		
 		PageFactory.initElements(driver, this);
 	}
-	
 	public void bookingsearch() {
-		
 		WebElement btn=driver.findElement(BookingsLocators.bookinglocator);
 		btn.click();
 	}
 	public void booking_status() {
-		
 		WebElement booking=driver.findElement(BookingsLocators.bookingopt);
 		booking.click();
 	}
@@ -44,8 +39,7 @@ public class Bookingspage{
 	}
 	public void Payment_option() {
 		WebElement payopt=driver.findElement(BookingsLocators.paymentopt);
-		payopt.click();
-			
+		payopt.click();	
 	}
 	public void Select_Payment_Option() {
 		WebElement payopt=driver.findElement(BookingsLocators.paymentopt);
@@ -53,36 +47,27 @@ public class Bookingspage{
 		s.selectByVisibleText("Paid");
 	}
     public void from_date() {
-		
-    	
     	driver.findElement(BookingsLocators.fromdate).click();
 		String expectedMonth = "September";
         String expectedYear = "2026";
         String expectedDate = "20";
-        
         while(true) {
         	String currentMonth=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.month)).getText();
         	String currentYear=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.year)).getText();
         	if(currentMonth.equalsIgnoreCase(expectedMonth) && currentYear.equalsIgnoreCase(expectedYear)) {
         		System.out.println("Found");
-        		
         		break;
         	}
-        	
         	driver.findElement(BookingsLocators.nextmonth).click();
         }
         driver.findElement(By.xpath("//td[@data-date='" + expectedDate + "' and @data-month='8' and @data-year='2026']/div")).click();   
    }
     public void Todate() {
-    	
     	driver.findElement(BookingsLocators.todate).click();
-    	
     	String expected_month="December";
     	String expected_Year="2026";
     	String expected_Date="15";
-    	
     	while(true) {
-    		
     		String current_month=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.todatemonth)).getText();
     		String current_year=wait.until(ExpectedConditions.elementToBeClickable(BookingsLocators.todateyear)).getText();
     		if(current_month.equalsIgnoreCase(expected_month) && current_year.equalsIgnoreCase(expected_Year)) {
@@ -93,5 +78,3 @@ public class Bookingspage{
     	driver.findElement(By.xpath("//td[@data-date='" + expected_Date + "' and @data-month='11' and @data-year='2026']/div")).click();
     }
 }
-
-

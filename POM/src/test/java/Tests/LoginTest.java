@@ -15,10 +15,8 @@ import Pages.Loginpage;
 import Pages.Logoutpage;
 import Tests.BookingsTest;
 public class LoginTest extends baseclass {
-	
 	@Test
 	public void tc1() throws IOException, InterruptedException {
-		
 		Loginpage lp;
 		/*FileInputStream fio=new FileInputStream("C:\\Users\\hp\\Desktop\\Userinput.xlsx");
 		
@@ -51,9 +49,8 @@ public class LoginTest extends baseclass {
 		
 		lp=new Loginpage(driver);
 		lp.Login();
-		
 		Logoutpage lo=new Logoutpage(driver);
 		lo.logoutbtn();
 		lo.app_logout();
 	}	
-	}
+}

@@ -1,5 +1,4 @@
 package Tests;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -39,17 +38,12 @@ public class BookingsTest extends baseclass {
 	}
 	@Test(priority=6)
      public void datepicer() {
-		
 		bpg=new Bookingspage(driver);
 		bpg.from_date();
 	}
 	@Test(priority=7)
 	public void todatepicker() {
-		
 		bpg=new Bookingspage(driver);
 		bpg.Todate();
-		
 	}
 }
-
-

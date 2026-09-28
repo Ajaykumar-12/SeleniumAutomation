@@ -12,10 +12,12 @@ import Base.baseclass;
 import Locators.LoginLocators;
 public class Loginpage {
 	WebDriver driver;
+	//Constructor
 	public Loginpage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	//Login functionality Method
 	public void Login() {
 		driver.findElement(LoginLocators.username).sendKeys("themeeride");
 		driver.findElement(LoginLocators.pwd).sendKeys("$@Meeride|@|2024^$");

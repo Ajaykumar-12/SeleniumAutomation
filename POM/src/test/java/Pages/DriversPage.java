@@ -16,41 +16,29 @@ import Base.baseclass;
 import Locators.DriverModule_Locators;
 
 public class DriversPage {
-	
 	WebDriver driver;
 	WebDriverWait wait;
-	
+	//Constructor
 	public DriversPage(WebDriver driver){
-		
 		this.driver=driver;
-		
 		wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		
 	}
-	
 	//verify whether user able to click Drivers tab
-	
 	public void Driver_Tab() {
 		WebElement driverstab=driver.findElement(DriverModule_Locators.Drivers);
 		driverstab.click();
 	}
 	//verify whether user able to click Drivers list
 	public void DriverList() {
-		
 		WebElement driverslist=driver.findElement(DriverModule_Locators.DriverList);
 		driverslist.click();
 	}
-	
 	//verify whether user able to enter name or mobile in name filed from drivers list
-	
 	public void Driver_Name() {
-		
 		WebElement name=driver.findElement(DriverModule_Locators.DriverName);
 		name.sendKeys("Ajay");
 	}
-	
 	public void Driver_Type() {
-		
 		WebElement list=driver.findElement(DriverModule_Locators.DriverType);
 		WebElement list1=driver.findElement(DriverModule_Locators.AdminStatus);
 		Select sel=new Select(list);
