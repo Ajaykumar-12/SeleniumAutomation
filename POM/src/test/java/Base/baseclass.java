@@ -19,7 +19,7 @@ public class baseclass {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		driver.get("https://app.themeeride.com/_flash");
+		driver.get("https://app.themeeride.in/_flash");
 	}
 	
 	@AfterMethod
