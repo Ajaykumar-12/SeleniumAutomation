@@ -1,33 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-12T13:31:34 IST" name="Default suite" finished-at="2026-08-12T13:31:47 IST" duration-ms="12834">
+  <suite started-at="2026-09-28T11:35:42 IST" name="Default suite" finished-at="2026-09-28T11:36:00 IST" duration-ms="17949">
     <groups>
     </groups>
-    <test started-at="2026-08-12T13:31:34 IST" name="Default test" finished-at="2026-08-12T13:31:47 IST" duration-ms="12834">
-      <class name="Tests.NotificationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.NotificationTest@34e9fd99]" started-at="2026-08-12T13:31:34 IST" name="setup" finished-at="2026-08-12T13:31:43 IST" duration-ms="8611" status="PASS">
+    <test started-at="2026-09-28T11:35:42 IST" name="Default test" finished-at="2026-09-28T11:36:00 IST" duration-ms="17949">
+      <class name="Tests.BookingsTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:42 IST" name="setup" finished-at="2026-09-28T11:35:49 IST" duration-ms="7086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="app_Login()[pri:1, instance:Tests.NotificationTest@34e9fd99]" started-at="2026-08-12T13:31:43 IST" name="app_Login" finished-at="2026-08-12T13:31:45 IST" duration-ms="2012" status="PASS">
+        <test-method signature="app_Login()[pri:1, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:49 IST" name="app_Login" finished-at="2026-09-28T11:35:55 IST" duration-ms="5647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- app_Login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.NotificationTest@34e9fd99]" started-at="2026-08-12T13:31:45 IST" name="teardown" finished-at="2026-08-12T13:31:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:55 IST" name="teardown" finished-at="2026-09-28T11:35:55 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="promotionalerts()[pri:2, instance:Tests.NotificationTest@34e9fd99]" started-at="2026-08-12T13:31:45 IST" name="promotionalerts" finished-at="2026-08-12T13:31:47 IST" duration-ms="2006" status="PASS">
+        <test-method signature="app_Bookings()[pri:2, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:55 IST" name="app_Bookings" finished-at="2026-09-28T11:35:56 IST" duration-ms="787" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- promotionalerts -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.NotificationTest@34e9fd99]" started-at="2026-08-12T13:31:47 IST" name="teardown" finished-at="2026-08-12T13:31:47 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- app_Bookings -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:56 IST" name="teardown" finished-at="2026-09-28T11:35:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Tests.NotificationTest -->
+        <test-method signature="app_Booking_Option()[pri:3, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:56 IST" name="app_Booking_Option" finished-at="2026-09-28T11:35:56 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- app_Booking_Option -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:56 IST" name="teardown" finished-at="2026-09-28T11:35:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="app_payment_option()[pri:4, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:56 IST" name="app_payment_option" finished-at="2026-09-28T11:35:57 IST" duration-ms="566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- app_payment_option -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:57 IST" name="teardown" finished-at="2026-09-28T11:35:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="app_payment_option_selection()[pri:5, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:57 IST" name="app_payment_option_selection" finished-at="2026-09-28T11:35:57 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- app_payment_option_selection -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:57 IST" name="teardown" finished-at="2026-09-28T11:35:57 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="datepicer()[pri:6, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:57 IST" name="datepicer" finished-at="2026-09-28T11:35:58 IST" duration-ms="1324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datepicer -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:58 IST" name="teardown" finished-at="2026-09-28T11:35:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="todatepicker()[pri:7, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:35:58 IST" name="todatepicker" finished-at="2026-09-28T11:36:00 IST" duration-ms="1522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- todatepicker -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.BookingsTest@43bc63a3]" started-at="2026-09-28T11:36:00 IST" name="teardown" finished-at="2026-09-28T11:36:00 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Tests.BookingsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

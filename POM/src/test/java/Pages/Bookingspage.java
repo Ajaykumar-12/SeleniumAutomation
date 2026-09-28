@@ -56,7 +56,7 @@ public class Bookingspage{
 		
     	
     	driver.findElement(BookingsLocators.fromdate).click();
-		String expectedMonth = "August";
+		String expectedMonth = "September";
         String expectedYear = "2026";
         String expectedDate = "20";
         
@@ -71,7 +71,7 @@ public class Bookingspage{
         	
         	driver.findElement(BookingsLocators.nextmonth).click();
         }
-        driver.findElement(By.xpath("//td[@data-date='" + expectedDate + "' and @data-month='7' and @data-year='2026']/div")).click();   
+        driver.findElement(By.xpath("//td[@data-date='" + expectedDate + "' and @data-month='8' and @data-year='2026']/div")).click();   
    }
     public void Todate() {
     	
